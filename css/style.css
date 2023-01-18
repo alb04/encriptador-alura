@@ -1,0 +1,153 @@
+
+body {
+    background-color: #F3F5FC;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+
+.container {
+    height: 500px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.descripcion {
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 40px;
+}
+
+.ingreso {
+    width: 50%;
+    float: left;
+    display: grid;
+    place-items:center;
+    border: 0;
+}
+
+.texto-entrada{
+    width: 80%;
+    border-radius: 5px;
+    background-color: #F3F5FC;
+    resize: none;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color :#0A3871;
+}
+
+.texto-entrada::placeholder{
+    color:#0A3871;
+}
+
+.boton-encriptar {
+    position: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 181px;
+    height: 37px;
+    background: #0A3871;
+    border-radius: 24px;
+    color: white;
+    border: 0;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+}
+
+.boton-desencriptar {
+    position: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 181px;
+    height: 37px;
+    background: #F3F5FC;
+    color: #0A3871;
+    border:1px solid #0A3871;
+    border-radius: 24px;
+    
+    flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.salida {
+    width: 50%;
+    float: right;
+    display: grid;
+    place-items: center;
+    border: 0;
+}
+
+.texto-encriptado{
+    width: 80%;
+    border-radius: 5px;
+    background: white;
+    resize: none;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color :#495057;
+}
+
+.boton-copiar {
+    position: flex;
+    width: 181px;
+    height: 37px;
+    background: #F3F5FC;
+    color: #0A3871;
+    border:1px solid #0A3871;
+    border-radius: 24px;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+    .ingreso, .salida{
+        width: 100%;
+    }
+
+    .ingreso > label, .salida > label{
+        margin: 1em;
+    }
+
+    .boton-desencriptar, .boton-copiar{
+        margin-bottom: 1em;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .ingreso, .salida{
+        width: 100%;
+    }
+
+    .ingreso > label, .salida > label{
+        margin: 1em;
+    }
+
+    .boton-desencriptar, .boton-copiar{
+        margin-bottom: 1em;
+    }
+}
